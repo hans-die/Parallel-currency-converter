@@ -16,9 +16,9 @@ def get_tiposdecambio(api_key):
     return cambio_oficial,blue
 
 def play_completion_sound():
-    pygame.mixer.Sound("/Users/cucu/Desktop/Music/Windows95/TADA.wav").play()
+    pygame.mixer.Sound("TADA.wav").play()
 def play_close_sound():
-    pygame.mixer.Sound("/Users/cucu/Desktop/Music/Windows95/CHIMES.wav").play()
+    pygame.mixer.Sound("CHIMES.wav").play()
 
 def convert_currency():
     try:
@@ -36,7 +36,7 @@ def on_closing():
     root.after(1000, root.destroy)  # Wait for 2 seconds to let the sound play before closing
 #ahora inicializamos pygame para que se reproduzca la intro de Windows 95 compuesta por Brian Eno
 pygame.mixer.init()
-pygame.mixer.music.load("/Users/cucu/Desktop/Music/Windows 95 Startup Sound - Brian Eno - The Microsoft Sound.mp3")
+pygame.mixer.music.load("Windows 95 Startup Sound - Brian Eno - The Microsoft Sound.mp3")
 pygame.mixer.music.play()
 
 api_key= "95203ef207a68485ebd8fdf7" #esta es la llave de la API con la que vamos a acceder a la informacion que nos interesa de la web
